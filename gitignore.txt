@@ -1,0 +1,7 @@
+server_2440
+client_2440
+*.o
+storage/
+received_*/
+*.log
+*.bin

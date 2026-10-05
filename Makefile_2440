@@ -1,0 +1,18 @@
+# Makefile_2440 - NetMessenger (IT23782440)
+# Build:  make -f Makefile_2440        Clean:  make -f Makefile_2440 clean
+CC      = gcc
+CFLAGS  = -Wall -Wextra -O2 -pthread
+LDFLAGS = -pthread
+
+all: server_2440 client_2440
+
+server_2440: server_2440.c
+	$(CC) $(CFLAGS) -o server_2440 server_2440.c $(LDFLAGS)
+
+client_2440: client_2440.c
+	$(CC) $(CFLAGS) -o client_2440 client_2440.c $(LDFLAGS)
+
+clean:
+	rm -f server_2440 client_2440
+
+.PHONY: all clean
