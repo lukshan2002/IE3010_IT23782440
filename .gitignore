@@ -1,0 +1,16 @@
+# Build files
+server_2440
+client_2440
+*.o
+
+# Test files
+*.log
+*.jpg
+*.bin
+hello.txt
+report.txt
+received_bob/
+storage/
+
+# Temporary files
+*.tmp
